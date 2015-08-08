@@ -1,4 +1,4 @@
-ata <- read.table("household_power_consumption.txt", sep = ";", header = TRUE, stringsAsFactors = FALSE)
+data <- read.table("household_power_consumption.txt", sep = ";", header = TRUE, stringsAsFactors = FALSE)
 
 plot_data <- subset(data, data$Date == "1/2/2007" | data$Date == "2/2/2007" , drop = TRUE)
 rm(data)
